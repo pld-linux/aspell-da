@@ -11,8 +11,8 @@ Group:		Applications/Text
 Source0:	ftp://ftp.gnu.org/gnu/aspell/dict/da/aspell5-da-%{version}-%{subv}.tar.bz2
 # Source0-md5:	d14c03dca23b572606279d7317b022d0
 URL:		http://aspell.sourceforge.net/
-BuildRequires:	aspell >= 2:0.50.0
-Requires:	aspell >= 2:0.50.0
+BuildRequires:	aspell >= 3:0.50.0
+Requires:	aspell >= 3:0.50.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
