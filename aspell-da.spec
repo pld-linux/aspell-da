@@ -1,6 +1,6 @@
 Summary:	Danish dictionary for aspell
 Summary(da):	Den store danske ordliste
-Summary(pl):	Du雟ki s這wnik dla aspella
+Summary(pl):	S這wnik du雟ki dla aspella
 Name:		aspell-da
 Version:	1.4.42
 %define	subv	1
@@ -22,7 +22,7 @@ Danish dictionary (i.e. word list) for aspell.
 Den store danske ordliste.
 
 %description -l pl
-Du雟ki s這wnik (lista s堯w) dla aspella.
+S這wnik (lista s堯w) du雟ki dla aspella.
 
 %prep
 %setup -q -n aspell5-da-%{version}-%{subv}
