@@ -1,17 +1,16 @@
 Summary:	Danish dictionary for aspell
 Summary(pl):	Duñski s³ownik dla aspella
 Name:		aspell-da
-Version:	0.1
-%define	subv	3
+Version:	0.50
+%define	subv	2
 Release:	1
 Epoch:		1
 License:	GPL
 Group:		Applications/Text
-Source0:	http://aspell.sourceforge.net/%{name}-%{version}-%{subv}.tar.bz2
+Source0:	ftp://ftp.gnu.org/gnu/aspell/%{name}-%{version}-%{subv}.tar.bz2
 URL:		http://aspell.sourceforge.net/
-BuildRequires:	aspell
-BuildRequires:	pspell-devel
-Requires:	aspell
+BuildRequires:	aspell >= 0.50.0
+Requires:	aspell >= 0.50.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -40,7 +39,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README doc/contributors
+%doc Copyright README doc/contributors
 %{_libdir}/aspell/*
 %{_datadir}/aspell/*
-%{_datadir}/pspell/*
