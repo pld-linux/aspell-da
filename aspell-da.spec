@@ -1,6 +1,6 @@
 Summary:	Danish dictionary for aspell
-Summary(da.UTF-8):   Den store danske ordliste
-Summary(pl.UTF-8):   Duński słownik dla aspella
+Summary(da.UTF-8):	Den store danske ordliste
+Summary(pl.UTF-8):	Duński słownik dla aspella
 Name:		aspell-da
 Version:	1.4.42
 %define	subv	1
