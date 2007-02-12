@@ -1,6 +1,6 @@
 Summary:	Danish dictionary for aspell
-Summary(da):	Den store danske ordliste
-Summary(pl):	DuÒski s≥ownik dla aspella
+Summary(da.UTF-8):   Den store danske ordliste
+Summary(pl.UTF-8):   Du≈Ñski s≈Çownik dla aspella
 Name:		aspell-da
 Version:	1.4.42
 %define	subv	1
@@ -18,11 +18,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Danish dictionary (i.e. word list) for aspell.
 
-%description -l da
+%description -l da.UTF-8
 Den store danske ordliste.
 
-%description -l pl
-DuÒski s≥ownik (lista s≥Ûw) dla aspella.
+%description -l pl.UTF-8
+Du≈Ñski s≈Çownik (lista s≈Ç√≥w) dla aspella.
 
 %prep
 %setup -q -n aspell5-da-%{version}-%{subv}
