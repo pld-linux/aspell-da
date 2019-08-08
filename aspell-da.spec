@@ -2,17 +2,17 @@ Summary:	Danish dictionary for aspell
 Summary(da.UTF-8):	Den store danske ordliste
 Summary(pl.UTF-8):	Duński słownik dla aspella
 Name:		aspell-da
-Version:	1.4.42
-%define	subv	1
+Version:	1.6.36
+%define	subv	11-0
 Release:	1
 Epoch:		1
 License:	GPL v2+
 Group:		Applications/Text
-Source0:	http://ftp.gnu.org/gnu/aspell/dict/da/aspell5-da-%{version}-%{subv}.tar.bz2
-# Source0-md5:	d14c03dca23b572606279d7317b022d0
-URL:		http://aspell.sourceforge.net/
-BuildRequires:	aspell >= 2:0.50.0
-Requires:	aspell >= 2:0.50.0
+Source0:	https://ftp.gnu.org/gnu/aspell/dict/da/aspell6-da-%{version}-%{subv}.tar.bz2
+# Source0-md5:	a3981f71bca43b5533897ba1dfe8b154
+URL:		http://aspell.net/
+BuildRequires:	aspell >= 2:0.60.0
+Requires:	aspell >= 2:0.60.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -25,7 +25,9 @@ Den store danske ordliste.
 Duński słownik (lista słów) dla aspella.
 
 %prep
-%setup -q -n aspell5-da-%{version}-%{subv}
+%setup -q -n aspell6-da-%{version}-%{subv}
+
+gunzip doc/contributors.gz
 
 %build
 # note: configure is not autoconf-generated
@@ -44,6 +46,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Copyright README doc/contributors
-%{_libdir}/aspell/*
-%{_datadir}/aspell/*
+%doc Copyright doc/{README,contributors}
+%{_libdir}/aspell/da.multi
+%{_libdir}/aspell/da.rws
+%{_libdir}/aspell/danish.alias
+%{_libdir}/aspell/dansk.alias
+%{_datadir}/aspell/da.dat
+%{_datadir}/aspell/da_phonet.dat
