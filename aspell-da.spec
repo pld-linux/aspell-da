@@ -4,7 +4,7 @@ Summary(pl.UTF-8):	Duński słownik dla aspella
 Name:		aspell-da
 Version:	1.6.36
 %define	subv	11-0
-Release:	1
+Release:	2
 Epoch:		1
 License:	GPL v2+
 Group:		Applications/Text
