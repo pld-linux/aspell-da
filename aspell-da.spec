@@ -13,6 +13,7 @@ Source0:	https://ftp.gnu.org/gnu/aspell/dict/da/aspell6-da-%{version}-%{subv}.ta
 URL:		http://aspell.net/
 BuildRequires:	aspell >= 2:0.60.0
 Requires:	aspell >= 2:0.60.0
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -47,9 +48,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Copyright doc/{README,contributors}
-%{_libdir}/aspell/da.multi
-%{_libdir}/aspell/da.rws
-%{_libdir}/aspell/danish.alias
-%{_libdir}/aspell/dansk.alias
+%{_prefix}/lib/aspell/da.multi
+%{_prefix}/lib/aspell/da.rws
+%{_prefix}/lib/aspell/danish.alias
+%{_prefix}/lib/aspell/dansk.alias
 %{_datadir}/aspell/da.dat
 %{_datadir}/aspell/da_phonet.dat
